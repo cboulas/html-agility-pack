@@ -5,8 +5,6 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2017. All rights reserved.
 
-#define FX35
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -796,7 +794,7 @@ namespace HtmlAgilityPack
                 TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(text);
                 while (enumerator.MoveNext())
                 {
-                    sb.Append(System.Net.HttpUtility.HtmlEncode(enumerator.GetTextElement()));
+                    sb.Append(System.Net.WebUtility.HtmlEncode(enumerator.GetTextElement()));
                 }
             }
             else
